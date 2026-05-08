@@ -124,8 +124,8 @@ Create a file named `vercel.json` in root:
 
 ## 📸 Demo (Add your link here)
 
-Live Link: https://your-app.vercel.app
-Video Demo: (Add your video link)
+Live Link: [https://madhukodali23.github.io/ShopZone/](https://madhukodali23.github.io/ShopZone/)
+Video Demo: [(Add your video link)](https://drive.google.com/file/d/1ronq0hBMfL5swZTlg1Fabt2TE56O219i/view?usp=sharing)
 
 ---
 
