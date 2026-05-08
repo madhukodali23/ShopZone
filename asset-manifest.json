@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/ShopZone/static/js/main.fb68409b.js",
+    "index.html": "/ShopZone/index.html",
+    "main.fb68409b.js.map": "/ShopZone/static/js/main.fb68409b.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.fb68409b.js"
+  ]
+}
