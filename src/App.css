@@ -1,0 +1,8 @@
+body {
+  font-family: Arial;
+}
+
+img {
+  object-fit: cover;
+  height: 150px;
+}
