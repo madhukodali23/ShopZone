@@ -1,70 +1,159 @@
-# Getting Started with Create React App
+# 🛒 ShopZone - E-Commerce React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ShopZone is a modern **Single Page Application (SPA)** built using React. It allows users to browse products, view details, add items to a cart, and simulate a checkout process — all without page reloads.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+### 🔹 Core Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* Multi-page navigation using **React Router**
+* Dynamic product pages (`/product/:id`)
+* Fetching products from API
+* Clean and responsive UI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🛍️ Cart Functionality
 
-### `npm test`
+* Add products to cart
+* Quantity handling
+* Total price calculation
+* Cart persists even after refresh (localStorage)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 🔐 Authentication
 
-### `npm run build`
+* Simple "Login as Guest" feature
+* Protected route for checkout
+* Redirect to login if not authenticated
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🧠 Concepts Used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React Functional Components
+* React Hooks (`useState`, `useEffect`, `useContext`)
+* Context API (Global State Management)
+* React Router v6
+* Dynamic Routing
+* Protected Routes
+* localStorage (Persistence)
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📦 Tech Stack
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* React.js
+* JavaScript (ES6)
+* HTML5 & CSS3
+* DummyJSON API
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🌐 API Used
 
-## Learn More
+```
+https://dummyjson.com/products
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 📁 Project Structure
 
-### Code Splitting
+```
+src/
+│
+├── components/
+│   └── Navbar.jsx
+│
+├── context/
+│   ├── CartContext.jsx
+│   └── AuthContext.jsx
+│
+├── pages/
+│   ├── Home.jsx
+│   ├── Shop.jsx
+│   ├── Product.jsx
+│   ├── Cart.jsx
+│   ├── Login.jsx
+│   ├── Contact.jsx
+│   └── Checkout.jsx
+│
+├── routes/
+│   └── ProtectedRoute.jsx
+│
+├── App.jsx
+└── index.js
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## ⚙️ Installation & Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 1. Clone the repository
 
-### Making a Progressive Web App
+```
+git clone https://github.com/your-username/shop-zone.git
+cd shop-zone
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 2. Install dependencies
 
-### Advanced Configuration
+```
+npm install
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 3. Run the app
 
-### Deployment
+```
+npm start
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🚀 Deployment (Vercel Fix)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Create a file named `vercel.json` in root:
+
+```
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
+```
+
+---
+
+## 📸 Demo (Add your link here)
+
+Live Link: https://your-app.vercel.app
+Video Demo: (Add your video link)
+
+---
+
+## 🧩 Future Improvements
+
+* Add remove from cart
+* Add quantity buttons (+ / -)
+* Improve UI (modern design)
+* Add search & filter
+* Integrate real authentication
+
+---
+
+## 🙌 Acknowledgements
+
+* DummyJSON API for product data
+* React Router documentation
+* Learning through hands-on building
+
+---
+
+## 👨‍💻 Author
+
+**Madhu Kanth Kodali**
+B.Tech CSE | Full Stack Developer
+
+---
+
+## ⭐ If you like this project
+
+Give it a ⭐ on GitHub and share with others!
